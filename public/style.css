@@ -14,6 +14,7 @@ body,
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
 nav {
@@ -43,7 +44,9 @@ header {
 header h1 {
   transform: skewX(-2deg);
 }
-
+#tracker{
+  text-shadow: 1px 1px 1px #747474;
+}
 select {
   display: block;
   -moz-appearance: none;
@@ -174,7 +177,18 @@ button {
   opacity: 0;
   transition: all 0.5s;
 }
-
+#canvas{
+   background-color: #fefeffb9;
+}
+#canvas2{
+   background-color: #fefeffb9;
+}
+#canvas3{
+   background-color: #fefeffb9;
+}
+#canvas4{
+   background-color: #fefeffb9;
+}
 #toast.success {
   opacity: 1;
   right: 10px;
@@ -434,4 +448,22 @@ form > button {
     opacity: 0;
     right: -320px;
   }
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  
+  background-size: cover;
 }
